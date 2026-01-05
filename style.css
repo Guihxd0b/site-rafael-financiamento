@@ -288,11 +288,11 @@ h1 {
 @media (max-width: 900px) {
   .hero .container {
     grid-template-columns: 1fr;
-    padding: 36px 0;
+    padding: 24px 0 28px;
   }
 
   .heroMedia img {
-    height: 260px;
+    height: 200px;
   }
 
   h1 {
@@ -599,4 +599,136 @@ h1 {
 #adapt{
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+@media (max-width: 900px) {
+  #adapt {
+    text-align: center;
+  }
+
+  #adapt ul {
+    padding-left: 0;
+  }
+
+  #adapt li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+  }
+
+  #adapt .badge,
+  #adapt .pill,
+  #adapt .tag {
+    margin: 0 auto 12px auto;
+    display: inline-block;
+  }
+
+  #adapt .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+@media (max-width: 900px) {
+
+  /* 1) Centraliza a coluna inteira da seção */
+  #adapt .adaptGrid {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+  }
+
+  /* 2) Garante que o bloco de texto não fique "puxado" */
+  #adapt .adaptText {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  /* 3) Corrige a LISTA (fica bonita e alinhada) */
+  #adapt .adaptText ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 18px auto 0 auto !important;
+    width: fit-content !important;
+    text-align: left !important;
+  }
+
+  #adapt .adaptText li {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    margin: 10px 0 !important;
+  }
+
+  /* 4) Centraliza o botão */
+  #adapt .adaptText .btn {
+    display: inline-block !important;
+    margin: 18px auto 0 auto !important;
+  }
+
+  /* 5) Centraliza a imagem */
+  #adapt .adaptImg {
+    display: block !important;
+    margin: 24px auto 0 auto !important;
+    max-width: 420px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 900px) {
+
+  /* Compacta a seção no mobile */
+  #adapt {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  /* Título e textos mais juntos */
+  #adapt h2, 
+  #adapt h3 {
+    margin-bottom: 10px !important;
+  }
+
+  #adapt p {
+    margin-top: 10px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Lista: remove espaço exagerado entre itens */
+  #adapt .adaptText ul {
+    margin-top: 14px !important;
+  }
+
+  #adapt .adaptText li {
+    margin: 6px 0 !important; /* antes estava grande */
+  }
+
+  /* Botão mais perto do conteúdo */
+  #adapt .adaptText .btn {
+    margin-top: 14px !important;
+  }
+
+  /* Imagem mais próxima do botão */
+  #adapt .adaptImg {
+    margin-top: 16px !important;
+  }
+}
+/* FIX FINAL - ALINHAMENTO MOBILE ADAPT */
+@media (max-width: 900px) {
+  #adapt,
+  #adapt .adaptGrid,
+  #adapt .adaptText {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
 }
