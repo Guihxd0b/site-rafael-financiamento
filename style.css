@@ -556,3 +556,47 @@ h1 {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
   display: block;
 }
+/* ===== ADAPT (seção principal) ===== */
+.adaptGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Alinhamento fino com "Quem atende" */
+#adapt .adaptGrid{
+    padding-left: 64px;
+     }
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .adaptGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.adaptImg{
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+.adaptText{
+ .adaptText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 520px;
+}
+}
+
+.adaptText .btn{
+  margin-top: 20px;
+}
+
+#adapt{
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
